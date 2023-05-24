@@ -1,0 +1,24 @@
+@media (min-width: 320px) and (max-width: 767px) {
+  .dump {
+    height: 105px;
+  }
+
+  .box-sec-2 {
+    position: static;
+  }
+
+  .box-card {
+    flex-direction: column;
+  }
+
+  .con-img {
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+  }
+  .sec-2 .col-md-4 {
+    margin-top: 180px;
+    height: auto;
+    margin-bottom: 20px;
+  }
+}
