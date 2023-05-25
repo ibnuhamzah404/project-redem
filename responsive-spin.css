@@ -1,0 +1,38 @@
+@media (min-width: 320px) and (max-width: 767px) {
+  html {
+    height: 1200px !important;
+    font-family: "Poppins", sans-serif;
+  }
+  .news-title {
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .news-title h2 {
+    font-size: 1rem;
+    margin: 0;
+  }
+
+  .card-wheel {
+    width: 90%;
+  }
+  .con-wheel {
+    padding: 0 !important;
+  }
+
+  .card-text h2 {
+    font-size: 1.5rem;
+    margin-bottom: 5px;
+  }
+
+  img.arrow {
+    width: 80px !important;
+  }
+
+  .card-text {
+    padding: 10px !important;
+    text-align: center;
+  }
+}

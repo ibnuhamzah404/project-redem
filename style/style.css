@@ -21,6 +21,7 @@
 body {
   background-color: var(--main-color);
   color: #fff;
+  font-family: "Poppins", sans-serif;
 }
 
 .background::before {
