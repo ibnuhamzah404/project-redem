@@ -84,7 +84,7 @@ body {
   border-radius: 10px;
   height: fit-content;
   box-shadow: 3px 4px 10px -3px rgba(14, 13, 13, 0.84);
-  position: sticky;
+
   height: auto;
   top: 20px;
 }
