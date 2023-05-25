@@ -33,15 +33,15 @@
     <link rel="stylesheet" href="style/responsive.css">
     <title>Document</title>
   </head>
-  <body>
+  <body class="w-100">
     <div class="background">
       <div class="container">
         <div class="row sec-1">
           <div class="col-md-12">
-            <div class="con-box">
-              <div class="box-card">
+            <div class="con-box d-flex">
+              <div class="box-card d-flex w-100">
                 <div class="con-img">
-                  <img src="img/spin.png" alt="" />
+                  <img class="w-100" src="img/spin.png" alt="" />
                 </div>
                 <div class="dump" style="width: 260px"></div>
                 <div class="con-text">
@@ -58,7 +58,7 @@
         </div>
         <div class="row sec-2">
           <div class="col-md-4">
-            <div class="box-sec-2">
+            <div class="box-sec-2 w-100">
               <p>Perhatikan Syarat Dibawah !!!</p>
               <p>JIKA SYARAT TIDAK TERPENUHI VOUCHER TIDAK AKAN TER-REDEEM</p>
               <ol>
@@ -85,10 +85,10 @@
             </div>
           </div>
           <div class="col-md-8">
-            <div class="card">
-              <div class="card-head">
-                <div class="num">1</div>
-                <div class="text-card">
+            <div class="card w-100">
+              <div class="card-head d-flex w-100">
+                <div class="num d-flex">1</div>
+                <div class="text-card d-flex">
                   <p>Lengkapi data anda</p>
                 </div>
               </div>
@@ -102,9 +102,28 @@
                     placeholder="Masukan vocher anda"
                     value="RG-"
                   />
-                  <small id="emailHelp" class="form-text text-muted"
+                  <small id="emailHelp" class="form-text text-muted d-block"
                     >vocher harus diawali dengan huruf RG</small
                   >
+                  <label for="selectgame" class="form-label">Pilih Game</label>
+                  <select class="form-select" aria-label="Default select example" name="selectgame">
+                    <option selected>Open this select menu</option>
+                    <option value="1">Mobile Legends</option>
+                    <option value="2">Free Fire</option>
+                    <option value="3">PUBG Mobile</option>
+                    <option value="3">Genshin Impact</option>
+                    <option value="3">Call Of Dutty</option>
+                  </select>
+
+                  <div class="mb-3">
+                    <label for="formFile" class="form-label">Upload File</label>
+                    <input class="form-control" type="file" id="formFile">
+                  </div>
+
+                  <div class="form-floating mt-3 text-dark ta-1">
+                    <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea"></textarea>
+                    <label for="floatingTextarea">Comments</label>
+                  </div>
 
                   <button
                     type="button"
