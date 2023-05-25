@@ -14,6 +14,7 @@
       type="image/png"
       href="https://gacha.royalsguard.com/media/logo.png"
     />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet"> 
 
     <!-- bootstrap -->
 
@@ -34,7 +35,7 @@
             color: #fff;
             background-image: url("img/background.png");
             background-size: cover;
-          
+            font-family: 'Poppins', sans-serif;
             text-align: initial;
            
             background-repeat: no-repeat;
@@ -67,9 +68,9 @@
         }
 
         .card-text h2{
-            font-size: 3rem;
+            font-size: 2.5rem;
             line-height: 45px;
-            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+           
             margin-bottom : 40px;
         }
 
@@ -83,28 +84,56 @@
         }
 
 
-        marquee{
-            background-color: #ffc107;
-           
-        }
+        
 
-     
+        .ticker{    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 50px;
+    margin: 0 auto;
+    position: fixed;
+    top: 0px;
+    right: 0px;
+    z-index: 20;} 
+
+    marquee{
+        color : black;
+    }
+
+           .news{width: 100%;background: rgb(177,123,48);
+background: linear-gradient(90deg, rgba(177,123,48,1) 5%, rgba(234,187,76,1) 32%, rgba(249,234,132,1) 49%, rgba(223,175,64,1) 75%, rgba(177,123,48,1) 100%);}
+           .news-title{width: 180px;text-align: center;background: #D59B00;position: absolute; z-index: 10;height: 50px;}
+           .news-title:after{position: absolute;content: "";right: -39px;border-left: 20px solid #D59B00;border-top: 28px solid transparent;border-right: 20px solid transparent;border-bottom: 21px solid transparent;top: 0px} 
+           .news-title h5{font-size: 17px;margin: 8% 0;color: #1e2022;} 
+           .news marquee{font-size: 18px;margin-top:15px}
+           .news-content p{margin-right: 41px;display: inline;color: #1e2022}
+
+        
     </style>
   </head>
 
   <body>
-    <marquee
-      ><font color=" #1e2022;"
-        >M*rc M**dag* <b>[Voucher Belanja RG Rp.100.000] </b>M*rc M**dag*
-        <b>[Voucher Belanja RG Rp.100.000] </b>M*rc M**dag*
-        <b>[Voucher Belanja RG Rp.100.000] </b>M*rc M**dag*
-        <b>[Voucher Belanja RG Rp.100.000] </b>M*rc M**dag*
-        <b>[Voucher Belanja RG Rp.100.000] </b>M*rc M**dag*
-        <b>[Voucher Belanja RG Rp.100.000] </b>M*rc M**dag*
-        <b>[Voucher Belanja RG Rp.100.000] </b>M*rc M**dag*
-        <b>[Voucher Belanja RG Rp.100.000] </b></font
-      ></marquee>
-    <div class="con-wheel p-5">
+
+      <div class="">
+        <div class="ticker">
+            <div class="news-title">
+                <h5>Pemenang </h5>
+            </div>
+            <div class="news">
+                <marquee class="news-content">
+                    <span >M*rc M**dag* <b>[Voucher Belanja RG Rp.100.000] </b>M*rc M**dag*
+                        <b>[Voucher Belanja RG Rp.100.000] </b>M*rc M**dag*
+                        <b>[Voucher Belanja RG Rp.100.000] </b>M*rc M**dag*
+                        <b>[Voucher Belanja RG Rp.100.000] </b>M*rc M**dag*
+                        <b>[Voucher Belanja RG Rp.100.000] </b>M*rc M**dag*
+                        <b>[Voucher Belanja RG Rp.100.000] </b>M*rc M**dag*
+                        <b>[Voucher Belanja RG Rp.100.000] </b>M*rc M**dag*
+                        <b>[Voucher Belanja RG Rp.100.000] </b><span>
+                </marquee>
+            </div>
+        </div>
+    </div>
+    <div class="con-wheel p-5 mt-5">
     <div  class="container">
         <div class="row ">
             <div class="col-md-7  d-flex justify-content-center">
@@ -114,7 +143,7 @@
             </div>
             <div class="col-md-5 d-flex ">
                 <div class="card-text ">
-                    <h2>kesempatan emas menanti Anda!</h2>
+                    <h2>Kesempatan emas menanti anda!</h2>
                     <p>kamu berkesempatan mendapatkan vocher, diskon atau hadiah spesial lainnya</p>
                     <p>cukup tekan tombol spin jika anda beruntung maka akan mendapatkan hadiah spesial</p>
                     <img style="width : 150px; margin : 0 auto; display : inherit;" src="https://cdn1.thesculptedvegan.com/wp-content/uploads/2020/05/07151301/Arrows-3-pointing-down-arrow-down-animated.gif" alt="">
