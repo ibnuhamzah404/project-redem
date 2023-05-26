@@ -36,11 +36,11 @@
    <body>
       <div class="">
          <div class="ticker">
-            <div class="news-title">
+            <div class="news-title d-flex justify-content-center">
                <h5>Pemenang</h5>
             </div>
             <div class="news">
-               <marquee class="news-content">
+               <marquee class="news-content d-flex justify-content-center align-items-center">
                   <span>
                   <?php echo $winner_running_text; ?>
                   </span>
