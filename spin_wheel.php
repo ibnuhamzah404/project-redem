@@ -10,6 +10,7 @@
       <link rel="stylesheet" href="css/responsive-spin.css" />
       <link rel="icon" type="image/png" href="media/logo.png">
       <meta name="author" content="hypernym.tech">
+      
       <link
          href="https://fonts.googleapis.com/css?family=Fjalla+One"
          rel="stylesheet"
