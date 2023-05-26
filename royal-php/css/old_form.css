@@ -1,0 +1,281 @@
+/* Set the primary color theme */
+:root {
+  --primary-color: rgb(25, 118, 210);
+  --border-color: #ddd;
+}
+
+/* Style for the page container */
+html, body {
+  height: 100%;
+}
+
+/* Style for the container that centers the content */
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+/* Style for the form container */
+form {
+  max-width: 400px;
+  padding: 20px;
+  border: 1px solid var(--border-color);
+  border-radius: 5px;
+  background-color: #fff;
+}
+
+/* Style for the form title */
+h1 {
+  font-size: 28px;
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 20px;
+  color: var(--primary-color);
+  font-weight: bold;
+}
+
+/* Style for the form labels */
+label {
+  display: block;
+  font-size: 16px;
+  margin-bottom: 5px;
+  color: var(--primary-color);
+  font-weight: bold;
+}
+
+/* Style for the form input fields */
+input[type=text] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: 1px solid var(--border-color);
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+/* Style for the form submit button */
+input[type=submit] {
+  background-color: var(--primary-color);
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  width: 100%;
+  font-size: 16px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+/* Style for the form submit button on hover */
+input[type=submit]:hover {
+  background-color: #1976d2;
+}
+
+/* Style for the new form fields */
+input[type=tel],
+select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: 1px solid var(--border-color);
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+textarea {
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
+  resize: vertical;
+  min-height: 150px;
+  width: 100%;
+}
+
+label[for="order-receipt"] {
+  display: block;
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+input[type="file"] {
+  display: block;
+  margin-bottom: 20px;
+}
+
+input[type="file"]:hover,
+input[type="file"]:focus {
+  outline: none;
+  cursor: pointer;
+}
+
+input[type="file"]::-webkit-file-upload-button {
+  background: #007bff;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+input[type="file"]::-webkit-file-upload-button:hover {
+  background: #0069d9;
+}
+
+input[type="file"]::-webkit-file-upload-button:focus {
+  outline: none;
+  box-shadow: 0 0 0 2px rgba(0, 123, 255, 0.4);
+}
+
+input[type="file"]::-moz-focus-inner {
+  border: 0;
+}
+
+input[type="file"]::-moz-file-upload-button {
+  background: #007bff;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+input[type="file"]::-moz-file-upload-button:hover {
+  background: #0069d9;
+}
+
+input[type="file"]::-ms-browse {
+  background: #007bff;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+input[type="file"]::-ms-browse:hover {
+  background: #0069d9;
+}
+
+
+
+/* Style for the media query for smaller devices */
+@media only screen and (max-width: 767px) {
+  /* Set form width to 100% */
+  form {
+    max-width: 100%;
+  }
+
+  /* Increase font size for h1 */
+  h1 {
+    font-size: 26px;
+  }
+
+  /* Increase font size for form labels */
+  label {
+    font-size: 18px;
+  }
+
+  /* Increase font size for form input fields */
+  input[type=text], input[type=tel], select {
+    font-size: 18px;
+  }
+
+  /* Increase padding for form submit button */
+  input[type=submit] {
+    padding: 14px 24px;
+    font-size: 18px;
+  }
+}
+
+
+/* Style for the media query for Samsung Galaxy Note */
+
+@media only screen and (max-width: 480px) {
+  /* Set form width to 100% */
+  form {
+  max-width: 100%;
+  }
+  /* Increase font size for form labels */
+label {
+  font-size: 20px;
+}
+
+/* Increase font size for form input fields */
+input[type=text] {
+  font-size: 20px;
+}
+
+/* Increase padding for form submit button */
+input[type=submit] {
+  padding: 16px 28px;
+  font-size: 20px;
+}
+}
+
+/* Style for error message */
+.error-message {
+  color: red;
+  font-size: 14px;
+  margin-bottom: 10px;
+  }
+  
+  /* Style for success message */
+  .success-message {
+  color: green;
+  font-size: 14px;
+  margin-bottom: 10px;
+  }
+  
+  /* Style for the form textarea field */
+  textarea {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+  resize: none;
+  }
+  
+  /* Style for the form select field */
+  select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+  appearance: none;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M7.8 10.7L12 15l4.2-4.3c.4-.4 1-.4 1.4 0 .4.4.4 1 0 1.4l-5 5c-.2.2-.4.3-.7.3s-.5-.1-.7-.3l-5-5c-.4-.4-.4-1 0-1.4.4-.4 1-.4 1.4 0z'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 0.5em top 50%, 0 0;
+  background-size: 1em auto, 100%;
+  }
+  
+  /* Style for the form select field on focus */
+  select:focus {
+  outline: none;
+  border: 2px solid var(--primary-color);
+  }
