@@ -10,7 +10,6 @@
       <link rel="stylesheet" href="css/responsive-spin.css" />
       <link rel="icon" type="image/png" href="media/logo.png">
       <meta name="author" content="hypernym.tech">
-      
       <link
          href="https://fonts.googleapis.com/css?family=Fjalla+One"
          rel="stylesheet"
@@ -49,11 +48,11 @@
             </div>
          </div>
       </div>
-      <div class="con-wheel ">
+      <div class="con-wheel " id="f-spin">
          <div class="container">
             <div class="row">
                <div class="col-md-7 col-sm-12 col-spin">
-                  <div class="card-wheel mt-5">
+                  <div class="card-wheel mt-5" >
                     
                      <div class="position-relative">
                         <svg class="wheelSVG" style="width : 100%; height : auto;" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" text-rendering="optimizeSpeed" preserveAspectRatio="xMidYMin meet" viewBox="0 0 600 600">
@@ -103,7 +102,7 @@
                         src="https://cdn1.thesculptedvegan.com/wp-content/uploads/2020/05/07151301/Arrows-3-pointing-down-arrow-down-animated.gif"
                         alt=""
                         />
-                     <button class="btn btn-md btn-warning spinBtn">SPIN SEKARANG</button>
+                     <a href="#f-spin" class="btn btn-md btn-warning spinBtn w-100 text-dark">SPIN SEKARANG</a>
                      <img
                         class="arrow"
                         style="
